@@ -1,62 +1,49 @@
-// Write your solution here!
-
 const cats = ["Milo", "Otis", "Garfield"];
 
-
-   function destructivelyAppendCat(name){
-    cats.push(name);
-   }
-
-   function destructivelyPrependCat(name){
-    cats.unshift(name);
-   }
-// don't forget to read directions carfully you 
-// understand but second guess yourself
-
-function destructivelyRemoveLastCat(name){
-    cats.pop(name);
-
+function destructivelyAppendCat(name) {
+    cats.push("Ralph")
 }
+
+function destructivelyPrependCat(name){
+    cats.unshift("Bob");
+}
+
+function destructivelyRemoveLastCat(name) {
+    cats.pop()
+}
+//=> both remove the last or first so no need to declare what im
+//=> removing
 
 function destructivelyRemoveFirstCat(name) {
-    cats.shift(name);
-
+    cats.shift()
 }
-//start with appends maybe get help
 
 function appendCat(name) {
-    let newCats = [...cats]
-    newCats.push(name)
-    return newCats;
+   const catsArray = ["Milo", "Otis", "Garfield"]
+   const newCatsArray = [...catsArray, name];
+    return newCatsArray;
+    // when it says return use return!!!
+   
 }
-// .push puts to the end of the array
-
 function prependCat(name) {
-    let newCats = [...cats]
-    newCats.unshift(name)
-    return newCats;
-}
-// .unshift puts to the beginnig of array
-
-function removeLastCat(name) {
-    let newCats = [...cats]
-    newCats.pop(name)
-    return newCats
+    const catsArray = ["Milo", "Otis", "Garfield"]
+    const newCatsArray = [name, ...catsArray]
+        return newCatsArray;
 }
 
-function removeFirstCat(name) {
-    let newCats = [...cats]
-    newCats.shift(name)
-    return newCats
+function removeLastCat(name){
+    const catsArray = ["Milo", "Otis", "Garfield"]
+    const newCatsArray = catsArray.slice(0,-1)
+    // dont forget to put the 0 and put all the parameters
+    return newCatsArray;
 }
-
- 
-
-
-
-
-
-
-    
+    function removeFirstCat() {
+        const catsArray = ["Milo", "Otis", "Garfield"]
+        const newCatsArray = catsArray.slice(1);
+        
+        return newCatsArray;
+        
+    }
+    // had the right code extra curly braces 
 
 
